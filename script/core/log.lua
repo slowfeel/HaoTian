@@ -1,26 +1,26 @@
 --日志相关
 --@author jianghong
 
-local log = class("log",Cls.baseClass)
+local Log = class("Log",Cls.baseClass)
 
-function log:ctor()
-    log.super.ctor(self)
+function Log:ctor()
+    Log.super.ctor(self)
 end
 
-function log:delete()
-    log.super.delete(self)
+function Log:delete()
+    Log.super.delete(self)
 end
 
 function lgo:info(tag,...)
 end
 
-function log:debug(tag,...)
+function Log:debug(tag,...)
 end
 
-function log:warn(tag,...)
+function Log:warn(tag,...)
 end
 
-function log:error(tag,...)
+function Log:error(tag,...)
 end
 
-return log
+return Log

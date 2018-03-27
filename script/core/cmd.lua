@@ -1,14 +1,14 @@
 --协议相关
 --@author jianghong
 
-local cmd = class("cmd",Cls.baseClass)
+local Cmd = class("Cmd",Cls.baseClass)
 
-function cmd:ctor()
-    cmd.super.ctor(self)
+function Cmd:ctor()
+    Cmd.super.ctor(self)
 end
 
-function cmd:delete()
-    cmd.super.delete(self)
+function Cmd:delete()
+    Cmd.super.delete(self)
 end
 
-return cmd
+return Cmd

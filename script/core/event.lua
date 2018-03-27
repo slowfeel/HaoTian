@@ -1,14 +1,14 @@
 --事件相关
 --@author jianghong
 
-local event = class("event",Cls.baseClass)
+local Event = class("Event",Cls.baseClass)
 
-function event:ctor()
-    event.super.ctor(self)
+function Event:ctor()
+    Event.super.ctor(self)
 end
 
-function event:delete()
-    event.super.delete(self)
+function Event:delete()
+    Event.super.delete(self)
 end
 
-return event
+return Event
