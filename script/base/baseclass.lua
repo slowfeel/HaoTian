@@ -1,10 +1,9 @@
 --所有类的基类
 --@author jianghong
 
-local BaseClass = class("BaseClass")
+local BaseClass = Class("BaseClass")
 
-function BaseClass:ctor()
-
+function BaseClass:create()
 end
 
 function BaseClass:delete()

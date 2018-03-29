@@ -1,10 +1,10 @@
 --事件相关
 --@author jianghong
 
-local Event = class("Event",Cls.baseClass)
+local Event = Class("Event",Cls.BaseClass)
 
-function Event:ctor()
-    Event.super.ctor(self)
+function Event:create()
+    Event.super.create(self)
 end
 
 function Event:delete()

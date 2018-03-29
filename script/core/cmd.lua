@@ -3,8 +3,8 @@
 
 local Cmd = Class("Cmd",Cls.BaseClass)
 
-function Cmd:ctor()
-    Cmd.super.ctor(self)
+function Cmd:create()
+    Cmd.super.create(self)
 end
 
 function Cmd:delete()

@@ -1,10 +1,10 @@
 --定时器相关
 --@author jianghong
 
-local Timer = class("Timer",Cls.baseClass)
+local Timer = Class("Timer",Cls.BaseClass)
 
-function Timer:ctor()
-    Timer.super.ctor(self)
+function Timer:create()
+    Timer.super.create(self)
 end
 
 function Timer:delete()
