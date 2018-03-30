@@ -75,7 +75,7 @@ function Class(classname, ...)
 
     if not cls.ctor then
         -- add default constructor
-        cls.ctor = function() end
+        cls.create = function() end
     end
     cls.new = function(...)
         local instance
@@ -86,12 +86,8 @@ function Class(classname, ...)
         end
         setmetatableindex(instance, cls)
         instance.class = cls
-        instance:ctor(...)
+        instance:create(...)
         return instance
     end
-    cls.create = function(_, ...)
-        return cls.new(...)
-    end
-
     return cls
 end
